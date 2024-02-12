@@ -2,8 +2,12 @@ h1 {
   text-align: center;
 }
 
+head {
+  height: 100px;
+}
+
 :root {
-  --primary-color: #cc00ff;
+  --primary-color: #00c3ff;
 }
 
 body {
@@ -22,20 +26,20 @@ body {
 
 span {
   position: relative;
-  width: 10px;
-  height: 30px;
+  width: 5px;
+  height: 20px;
 }
 
 span::before {
-  content: "";
+  content: '';
   position: absolute;
-  width: 10px;
-  height: 30px;
+  width: 5px;
+  height: 20px;
   inset: 0;
   background: var(--primary-color);
   box-shadow: 0 0 5px var(--primary-color), 0 0 15px var(--primary-color), 0 0 30px var(--primary-color),
     0 0 50px var(--primary-color);
-  animation: anim 6s linear infinite;
+  animation: anim 5s linear infinite;
   animation-delay: calc(var(--i) * 0.1s);
 }
 
@@ -72,14 +76,61 @@ span::before {
   }
 
   90% {
-    background: #000;
-    box-shadow: none;
+    background: black;
+    box-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black, 0 0 50px black;
     rotate: 0deg;
   }
 
   90.1%,
   100% {
-    box-shadow: #000;
-    box-shadow: none;
+    background: black;
+    box-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black, 0 0 50px black;
+    rotate: 0deg;
   }
 }
+
+/* .block {
+  width: 50px;
+  height: 1px;
+  transform-origin: 100% 26px;
+  transform: rotate(0deg);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.block:nth-child(1) {
+  transform: rotate(30deg);
+}
+.block:nth-child(2) {
+  transform: rotate(60deg);
+}
+.block:nth-child(3) {
+  transform: rotate(90deg);
+}
+.block:nth-child(4) {
+  transform: rotate(120deg);
+}
+.block:nth-child(5) {
+  transform: rotate(150deg);
+}
+.block:nth-child(6) {
+  transform: rotate(180deg);
+}
+.block:nth-child(7) {
+  transform: rotate(210deg);
+}
+.block:nth-child(8) {
+  transform: rotate(240deg);
+}
+.block:nth-child(9) {
+  transform: rotate(270deg);
+}
+.block:nth-child(10) {
+  transform: rotate(300deg);
+}
+.block:nth-child(11) {
+  transform: rotate(330deg);
+}
+.block:nth-child(12) {
+  transform: rotate(360deg);
+} */
