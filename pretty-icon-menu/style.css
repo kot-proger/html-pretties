@@ -46,7 +46,7 @@ ul li::after {
   position: absolute;
   inset: 0;
   background: var(--bg);
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   transition: 0.5s;
 }
 
