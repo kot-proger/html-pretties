@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Word Editor</title>
+  </head>
+  <body>
+    <h2>
+      <p>Word Editor</p>
+    </h2>
+    <div class="editor">
+      <div class="toolbar">
+        <a href="#" data-role="bold"> <i class="fa-solid fa-bold"></i></a>
+        <a href="#" data-role="italic"> <i class="fa-solid fa-italic"></i></a>
+        <a href="#" data-role="underline"> <i class="fa-solid fa-underline"></i></a>
+        <a href="#" data-role="subscript"> <i class="fa-solid fa-subscript"></i></a>
+        <a href="#" data-role="superscript"> <i class="fa-solid fa-superscript"></i></a>
+        <a href="#" data-role="undo"> <i class="fa-solid fa-undo"></i></a>
+        <a href="#" data-role="redo"> <i class="fa-solid fa-redo"></i></a>
+      </div>
+      <div class="content" contenteditable="true">
+        <p><b>DO NOT</b> touch this.</p>
+        <p><i>Ouch!</i> stop hitting me.</p>
+        <p>This is very <u>important</u> information</p>
+        <p>Carbon dioxide is also known as CO<sub>2</sub>.</p>
+        <p>2<sup>2</sup> equals 4.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
