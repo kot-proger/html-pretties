@@ -8,8 +8,8 @@ h1 {
 }
 
 .loader {
-  height: 300px;
-  width: 300px;
+  height: 600px;
+  width: 600px;
   margin: auto;
   display: flex;
   transform-style: preserve-3d;
@@ -19,7 +19,7 @@ h1 {
 }
 
 .circle {
-  --distance: 20px;
+  --distance: 28px;
   border: 20px solid var(--color);
   border-radius: 500px;
   box-shadow: 0px 0px 4px var(--color), 0px 0px 8px var(--color) inset, 0px 0px 10px var(--color) inset;
